@@ -29,7 +29,7 @@ app.include_router(auth.router)
 
 @app.get("/")
 def root():
-    return {"message": "Jelo Wereld!!!"}
+    return {"message": "Jelo Wereld, succesvol deployed from CI/CD pipeline"}
 
 
 

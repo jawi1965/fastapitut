@@ -46,11 +46,11 @@ jobs:
         run: |
           pip install pytest
           pytest
-deploy:
-  runs-on: ubuntu-latest
-  needs: [build]
-  steps:
-    - name: deploy stuff on
-      run: echo "here we deployn some stuff"
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: deploy stuff on
+        run: echo "here we deployn some stuff"
 
  

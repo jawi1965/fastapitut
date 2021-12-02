@@ -45,7 +45,7 @@ jobs:
       - name: test with pytest
         run: |
           pip install pytest
-          pytest
+          pytest -v
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
@@ -61,10 +61,6 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
           heroku_email: ${{secrets.HEROKU_EMAIL}}
 
-      # pull github repo
-      # install heroku cli
-      # heroku login
-      # add git remote for heroku
-      #git push heroku main
+      
 
  
